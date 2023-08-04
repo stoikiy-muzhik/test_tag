@@ -26,7 +26,6 @@ resource "azurerm_key_vault" "example" {
     git_modifiers        = "Adin.Ermie/nimrodkor"
     git_org              = "bridgecrewio"
     git_repo             = "terragoat"
-    yor_trace            = "79afeacc-248a-4015-a4fa-76a6a57f06e2"
   })
  }
 
