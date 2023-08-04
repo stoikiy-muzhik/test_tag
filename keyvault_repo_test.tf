@@ -19,7 +19,6 @@ resource "azurerm_key_vault" "example" {
     environment = var.environment
     terragoat   = true
     }, {
-    git_commit           = "81738b80d571fa3034633690d13ffb460e1e7dea"
     git_file             = "terraform/azure/key_vault.tf"
     git_last_modified_at = "2020-06-19 21:14:50"
     git_last_modified_by = "Adin.Ermie@outlook.com"
