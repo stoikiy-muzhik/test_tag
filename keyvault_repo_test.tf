@@ -24,11 +24,11 @@ resource "azurerm_key_vault" "example" {
     git_last_modified_at = "2020-06-19 21:14:50"
     git_last_modified_by = "Adin.Ermie@outlook.com"
     git_modifiers        = "Adin.Ermie/nimrodkor"
-    git_org              = "bridgecrewio"
+    git_org              = "stoikiy-muzhik"
     git_repo             = "terragoat"
     yor_trace            = "79afeacc-248a-4015-a4fa-76a6a57f06e2"
   })
- }
+}
 
 resource "azurerm_key_vault_key" "generated" {
   name         = "terragoat-generated-certificate-${var.environment}"
@@ -53,6 +53,10 @@ resource "azurerm_key_vault_key" "generated" {
   #   git_repo             = "terragoat"
   #   yor_trace            = "afbc6e13-63d9-4e6c-8914-d58b7744b5dd"
   # }
+  tags = {
+    git_org   = "stoikiy-muzhik"
+    yor_trace = "093a6c13-1219-4e4f-960a-3033608538ba"
+  }
 }
 
 resource "azurerm_key_vault_secret" "secret" {
@@ -69,4 +73,8 @@ resource "azurerm_key_vault_secret" "secret" {
   #   git_repo             = "terragoat"
   #   yor_trace            = "40517524-f05d-485b-bfbe-3fa0dbee511e"
   # }
+  tags = {
+    git_org   = "stoikiy-muzhik"
+    yor_trace = "44822b35-8a83-4454-b76f-669494a0334c"
+  }
 }
